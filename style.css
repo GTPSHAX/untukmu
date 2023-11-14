@@ -57,7 +57,7 @@ header {
     height: auto;
 }
 .fase > .bg {
-    margin-top: -170px;
+    margin-top: -190px;
     z-index: 1;
 }
 @keyframes awan {
@@ -67,7 +67,7 @@ header {
     }
     50% {opacity: 1;}
     100% {
-        left: 7vw;
+        left: 10vw;
         opacity: 0;
     }
 }
