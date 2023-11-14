@@ -33,7 +33,7 @@ header {
     width: 100vw;
     height: 100vh;
 }
-header > .bg > svg {
+.bg > svg {
     width: 100%;
     height: auto;
 
@@ -53,13 +53,9 @@ header > .bg > svg {
     width: 70%;
     height: auto;
 }
-header > .footer {
-    position: absolute;
-    bottom: 0;
-}
-header > .footer > svg {
-    width: 100%;
-    height: auto;
+.fase > .bg {
+    margin-top: -170px;
+    z-index: 1;
 }
 @keyframes awan {
     0% {
