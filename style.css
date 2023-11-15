@@ -32,6 +32,7 @@ header {
     position: relative;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 .bg > svg {
     width: 100%;
@@ -76,8 +77,11 @@ header {
 }
 .ombak1 > svg:nth-child(2) {
     margin-top: 220px;
-    width: 350px;
     animation: ombak 5s ease-in-out infinite;
+    transform: scale(1.5);
+}
+main {
+    overflow-x: visible;
 }
 @keyframes awan {
     0% {
