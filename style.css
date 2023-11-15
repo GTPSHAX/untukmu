@@ -68,6 +68,7 @@ header {
 }
 .ombak1 {
     height: 100%;
+    overflow: hidden;
 }
 .ombak1 > svg {
     position: absolute;
@@ -79,9 +80,6 @@ header {
     margin-top: 220px;
     animation: ombak 5s ease-in-out infinite;
     transform: scale(1.5);
-}
-main {
-    overflow-x: visible;
 }
 @keyframes awan {
     0% {
@@ -102,15 +100,12 @@ main {
 @keyframes ombak {
     0% {
         margin-left: 0px;
-        margin-top: 0px;
     }
     50% {
         margin-left: -20px;
-        margin-top: 20px;
     }
     100% {
         margin-left: 0px;
-        margin-top: 0px;
     }
 }
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap');
