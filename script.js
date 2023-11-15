@@ -39,6 +39,7 @@ function isInViewport(element) {
         item.classList.remove('sudah-masuk');
       } else if (hasEntered && isInViewport(item)) {
         item.classList.add('pop');
+        item.classList.remove('popo');
         item.classList.remove('sudah-masuk');
       } else if (!hasEntered && !isInViewport(item)) {
         item.classList.add('popo');
@@ -46,6 +47,7 @@ function isInViewport(element) {
       } else if (hasEntered && !isInViewport(item)) {
         item.classList.add('sudah-masuk');
         item.classList.remove('pop');
+        item.classList.remove('popo');
       }
     });
   }
