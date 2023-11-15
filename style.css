@@ -82,6 +82,30 @@ header {
     animation: ombak 5s ease-in-out infinite;
     transform: scale(1.5);
 }
+main {
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+    margin-top: -130px;
+    z-index: 1;
+    position: relative;
+}
+main > .bg {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+.ombak > svg:nth-child(1) {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+.ombak > svg:nth-child(2) {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    animation: ombak 5s ease-in-out infinite;
+}
 @keyframes awan {
     0% {
         opacity: 0;
