@@ -86,7 +86,7 @@ main {
     width: 100vw;
     height: fit-content;
     overflow: hidden;
-    margin-top: -130px;
+    margin-top: -150px;
     z-index: 1;
     position: relative;
 }
@@ -99,6 +99,7 @@ main > .bg {
     position: absolute;
     z-index: 1;
     bottom: 0;
+    animation: ombak2 10s ease-in-out infinite;
 }
 .ombak > svg:nth-child(2) {
     position: absolute;
@@ -128,6 +129,17 @@ main > .bg {
     }
     50% {
         margin-left: -20px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+@keyframes ombak2 {
+    0% {
+        margin-left: 0px;
+    }
+    50% {
+        margin-left: 20px;
     }
     100% {
         margin-left: 0px;
