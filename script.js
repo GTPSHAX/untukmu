@@ -1,18 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
+window.addEventListener('load', function() {
     const loadingElement = document.querySelector('.loading');
-  
-    // Tambahkan kelas "muncul" pada elemen dengan kelas "loading"
     if (loadingElement) {
       loadingElement.classList.add('muncul');
-    }
-  
-    // Hapus kelas "muncul" saat semua elemen di website selesai dimuat
-    window.addEventListener('load', function() {
-      if (loadingElement) {
+      // Mengatur timeout untuk menghapus kelas "muncul" setelah beberapa waktu
+      setTimeout(function() {
         loadingElement.classList.remove('muncul');
-      }
-    });
-});
+      }, 2000); // Ganti nilai 2000 dengan durasi waktu yang diinginkan (dalam milidetik)
+    }
+  });
 
 // Fungsi untuk mengecek apakah elemen dalam viewport
 function isInViewport(element) {
