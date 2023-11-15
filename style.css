@@ -161,7 +161,7 @@ main > .bg {
     }
     50% {
         top: 56%;
-        transform: rotate(20deg);
+        transform: rotate(10deg);
     }
     100% {
     }
