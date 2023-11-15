@@ -116,6 +116,56 @@ main > .bg {
     bottom: 0;
     animation: ombak 5s ease-in-out infinite;
 }
+.kotak {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.sudah-masuk{
+    animation: gas2 1s ease-in-out;
+    opacity: 0;
+}
+.popo {
+    display: none;
+}
+.pop {
+    animation: gas 1s ease-in-out;
+}
+.loading {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    background-color: rgb(251, 251, 251);
+}
+.loading > img {
+    width: 70%;
+}
+.muncul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes gas {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes gas2 {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        display: none;
+        transform: scale(0.5);
+    }
+}
 @keyframes awan {
     0% {
         opacity: 0;
