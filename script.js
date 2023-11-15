@@ -1,7 +1,6 @@
 window.addEventListener('load', function() {
     const loadingElement = document.querySelector('.loading');
     if (loadingElement) {
-      loadingElement.classList.add('muncul');
       // Mengatur timeout untuk menghapus kelas "muncul" setelah beberapa waktu
       setTimeout(function() {
         loadingElement.classList.remove('muncul');
