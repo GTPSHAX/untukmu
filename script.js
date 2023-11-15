@@ -36,8 +36,10 @@ function isInViewport(element) {
         item.classList.add('sudah-masuks');
         item.classList.add('pop');
         item.classList.remove('popo');
+        item.classList.remove('sudah-masuk');
       } else if (hasEntered && isInViewport(item)) {
         item.classList.add('pop');
+        item.classList.remove('sudah-masuk');
       } else if (!hasEntered && !isInViewport(item)) {
         item.classList.add('popo');
         item.classList.remove('pop');
