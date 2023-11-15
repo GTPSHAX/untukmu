@@ -24,24 +24,13 @@ function isInViewport(element) {
     const items = document.querySelectorAll('.item');
     
     items.forEach(item => {
-      const hasEntered = item.classList.contains('sudah-masuks');
       
-      if (!hasEntered && isInViewport(item)) {
-        item.classList.add('sudah-masuks');
+      if (isInViewport(item)) {
         item.classList.add('pop');
-        item.classList.remove('popo');
         item.classList.remove('sudah-masuk');
-      } else if (hasEntered && isInViewport(item)) {
-        item.classList.add('pop');
-        item.classList.remove('popo');
-        item.classList.remove('sudah-masuk');
-      } else if (!hasEntered && !isInViewport(item)) {
-        item.classList.add('popo');
+      } else {
         item.classList.remove('pop');
-      } else if (hasEntered && !isInViewport(item)) {
         item.classList.add('sudah-masuk');
-        item.classList.remove('pop');
-        item.classList.remove('popo');
       }
     });
   }
